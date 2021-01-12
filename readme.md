@@ -2,10 +2,10 @@
 
 # email missing students
 
-The wife is now teaching online and has to email parents of kids to fail to
+The wife is now teaching online and has to send emails to parents of kids who fail to
 attend class.
 
-Given 
+Given
 - a csv of the class with name, email, and parent_email
 - a csv of the attendees (name, email)
 - an email template text file
