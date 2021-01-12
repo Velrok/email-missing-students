@@ -1,0 +1,4 @@
+subject: {name} missed class today
+to: {parent_email}
+
+I'll have to inform you that {name} has failed to attend class today.
