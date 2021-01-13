@@ -1,4 +1,16 @@
 subject: {name} missed class today
 to: {parent_email}
 
-I'll have to inform you that {name} has failed to attend class today.
+Dear {parent_name},
+
+Just wanted to send a quick email to let you know that {name} did not submit their last piece of work for their last Design lesson. Therefore, I just wanted to check if {pronoun} was having any trouble with technology or logging onto Google Classroom. 
+
+Our class meeting link is: 
+{meet_link}
+
+Google Classroom code: 
+{classroom_code}
+
+If you have any questions or need to update us on technology, please let me know. 
+
+Best wishes,

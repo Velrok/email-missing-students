@@ -46,11 +46,13 @@ fn main() {
     println!("--- emails ---");
     let emails: Vec<_> = missing
         .iter()
-        .map(|r| tt.render("email", &r).unwrap())
+        .map(|r| (r.parent_email.to_owned(), tt.render("email", &r).unwrap()))
         .collect();
-    for e in emails {
-        println!("{}", e);
+
+    for (email, body) in emails {
+        println!("{}", body);
         println!("------------");
+        fs::write(format!("./{}.email.txt", email), body).expect("Failed to output email text.");
     }
 }
 
@@ -96,6 +98,10 @@ struct ClassRecord {
     name: String,
     email: String,
     parent_email: String,
+    parent_name: String,
+    meet_link: String,
+    classroom_code: String,
+    pronoun: String,
 }
 
 fn read_attendence(file_name: &str) -> Vec<AttendenceRecord> {
